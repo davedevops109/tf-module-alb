@@ -1,4 +1,4 @@
-resource "aws_security_group" "main" {
+resource "aws_security_group" "MAIN" {
   name        = "${var.env}-alb-${var.subnets_name}-security-group"
   description = "${var.env}-alb-${var.subnets_name}-security-group"
   vpc_id      = var.vpc_id
